@@ -113,9 +113,9 @@ Will create the following roles: "Blue Players, Blue Admins, Blue Leaders"
 
 Command: `/groupclone_channels <channel_id> <chanfind> <chanreplace>`
 
-- `<channel_id>`: The ID of the category to clone
-- `<chanfind>`: The string to search for in channel names
-- `<chanreplace>`: The string to replace `<chanfind>` with in the new channel names
+- \<channel_id>: The ID of the category to clone
+- \<chanfind>: The string to search for in channel names
+- \<chanreplace>: The string to replace \<chanfind> with in the new channel names
 
 This command will clone the specified category and all its channels. It will replace `<chanfind>` with `<chanreplace>` in all channel names and related role permissions.
 
@@ -125,6 +125,25 @@ Example:
 This will clone the category with ID 123456789, replacing "Red" with "Blue" in all channel names and related permissions. 
 
 **BEWARE:** When setting channel and category Permissions, it will also copy the existing role permissions, while ALSO replacing "Red" with "Blue" in all role names. Role permissions that do not match the chanfind parameter will be copied to the new channels as is.
+
+#### How to Get a Discord Channel ID
+
+To use the /groupclone_channels command, you'll need the ID of the category you want to clone. Here's how to obtain a channel or category ID:
+
+1. Enable Developer Mode in Discord:
+   - Open Discord and go to User Settings (the gear icon next to your username).
+   - In the left sidebar, click on "Advanced".
+   - Toggle on "Developer Mode".
+
+2. Get the Channel ID:
+   - Right-click on the category or channel you want to clone.
+   - Click on "Copy ID" at the bottom of the context menu.
+
+3. Use this ID in the /groupclone_channels command.
+
+Note: Channel IDs are typically long numbers. Make sure you're copying the entire ID.
+
+If you don't see the "Copy ID" option, ensure that Developer Mode is enabled as described in step 1.
 
 ##  6. <a name='Support'></a>Support
 
