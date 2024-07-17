@@ -1,0 +1,6 @@
+version: '3'
+services:
+  groupclone_bot:
+    env_file: ".env"
+    build: .
+
